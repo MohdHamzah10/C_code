@@ -11,7 +11,7 @@ while(num!=0){
 }
 if(origNum==rev)
 printf("palindrome");
-else printf("bhapp");
+else printf("Not palindrome");
 
 return 0;
 }
