@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	int n,binary,rem,dec=0,base=1;
-	printf("Enter the binary to conver to decimal equivalent: ");
+	printf("Enter the binary to convert to decimal equivalent: ");
 	scanf("%d",&n);
 	binary=n;
 	while(n>0){
