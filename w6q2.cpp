@@ -20,21 +20,21 @@ int main() {
     }
 
     // Sort processes by arrival time using a simple bubble sort
-//    for(i = 0; i < n-1; i++) {
-//        for(j = 0; j < n-i-1; j++) {
-//            if(arrival_time[j] > arrival_time[j+1]) {
-//                // Swap arrival time
-//                int temp = arrival_time[j];
-//                arrival_time[j] = arrival_time[j+1];
-//                arrival_time[j+1] = temp;
-//
-//                // Swap burst time accordingly
-//                temp = burst_time[j];
-//                burst_time[j] = burst_time[j+1];
-//                burst_time[j+1] = temp;
-//            }
-//        }
-//    }
+   for(i = 0; i < n-1; i++) {
+       for(j = 0; j < n-i-1; j++) {
+           if(arrival_time[j] > arrival_time[j+1]) {
+               // Swap arrival time
+               int temp = arrival_time[j];
+               arrival_time[j] = arrival_time[j+1];
+               arrival_time[j+1] = temp;
+
+               // Swap burst time accordingly
+               temp = burst_time[j];
+               burst_time[j] = burst_time[j+1];
+               burst_time[j+1] = temp;
+           }
+       }
+   }
 
     // Calculating completion time, waiting time and turnaround time
     completion_time[0] = arrival_time[0] + burst_time[0];
